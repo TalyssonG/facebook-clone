@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native'
 
-const container = styled.View`
+
+
+const Container = styled.View`
   width: 40px;
   height: 40px;
   position:relative;
@@ -18,7 +20,7 @@ const Avatar = ({source}) => {
       <Container>
           <User source={source}/>
       </Container>
-  )
-}
+  );
+};
 
 export default Avatar;

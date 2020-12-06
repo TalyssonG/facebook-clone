@@ -4,9 +4,9 @@ import React from 'react'
 import styled from 'styled-components/native'
 import { Feather, MaterialCommunityIcons} from '@expo/vector-icons'
 
-const container = styled.View`
+const Container = styled.View`
  width: 100%;
- height: 60px;
+ height: 60px; 
  padding: 0 11px;
  align-items: center;
  flex-direction: row;
@@ -58,8 +58,8 @@ const AppBar = () => {
       </Row>
   </Container>
 
-    )
-}
+    );
+};
 
-export default AppBar
+export default AppBar;
 
