@@ -49,7 +49,7 @@ const Text = styled.Text`
   color: #ffffff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 `;
-const BottonDivider = styled.View`
+const BottomDivider = styled.View`
   width: 100%;
   height: 9px;
   background: #f0f2f5;
@@ -122,7 +122,7 @@ const Story = () => {
         
       </ScrollView>
     </Container>
-    <BottonDivider/>
+    <BottomDivider/>
     </>
   );
 };

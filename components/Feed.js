@@ -1,10 +1,10 @@
-import React from 'react'
-import { View } from 'react-native'
-import styled from 'styled-components/native'
 
+import React from "react";
+import styled from "styled-components/native";
+import { View } from "react-native";
+import { Entypo, AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
+import Avatar from "./Avatar";
 
-import { Entypo } from '@expo/vector-icons'
-import Avatar from './Avatar'
 const Container = styled.View`
  flex: 1;
  
@@ -84,7 +84,7 @@ const FooterMenu = styled.View`
    padding: 9px 0;
 `;
 
-const Button = styled.TouchableOpacity`
+const Buttom = styled.TouchableOpacity`
    flex-direction: row;
 `;
 
@@ -97,6 +97,14 @@ const Text = styled.Text`
    color: #424040;
 `;
 
+const BottomDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`
+
+
+
 const Feed = () => {
     return (
         <>
@@ -104,7 +112,7 @@ const Feed = () => {
                 <Header>
                     <Row>
                         <Avatar
-                            source={require('..assets/user3.jpg')}
+                            source={require('../assets/minhafoto.jpg')}
                         />
                         <View style={{ paddingLeft: 10 }}>
                             <User>Talysson Gadêlha</User>
@@ -150,10 +158,52 @@ const Feed = () => {
                           </Row>
                         <TextCount>200 comentários</TextCount>
                     </FooterCount>
+
+                  <Separator />
+
+                  <FooterMenu>
+                      <Buttom>
+                          <Icon>
+                              <AntDesign 
+                               name="like2"
+                               size={20}
+                               color="#424040"
+                              />
+                          </Icon>
+                          <Text> Curtir </Text>
+                      </Buttom>
+
+                      <Button>
+                          <Icon>
+                              <MaterialCommunityIcons 
+                               name="content-outline"
+                               size={20}
+                               color="#424040"
+                              />
+                          </Icon>
+                          <Text> Comentar </Text>
+                      </Button>
+
+                      <Button>
+                          <Icon>
+                              <MaterialCommunityIcons
+                               name="share-outline"
+                               size={20}
+                               color="#424040"
+                              />
+                          </Icon>
+                          <Text> Curtir </Text>
+                      </Button>
+                  </FooterMenu>
                 </Footer>
+              <BottomDivider/>
             </Container>
         </>
+
+        //Outro container
+
+    
     );
 };
 
-export default Feed
+export default Feed;
