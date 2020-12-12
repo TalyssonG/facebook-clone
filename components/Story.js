@@ -49,9 +49,16 @@ const Text = styled.Text`
   color: #ffffff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 `;
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`
+
 
 const Story = () => {
   return (
+    <>
     <Container>
       <ScrollView
         horizontal
@@ -71,34 +78,52 @@ const Story = () => {
         <Card>
           <CardStory source={require("../assets/story2.jpg")} />
           <CardUser>
-            <Avatar source={require("../assets/user2.jpg")} story={true}/>
+            <Avatar source={require("../assets/user2.jpg")} 
+            story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text> Christian Lima</Text>
+          </CardFooter>
         </Card>
 
         <Card>
           <CardStory source={require("../assets/story3.jpg")} />
           <CardUser>
-            <Avatar source={require("../assets/user5.jpg")} story={true}/>
+            <Avatar source={require("../assets/user5.jpg")} 
+            story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text> Livía Lima</Text>
+          </CardFooter>
         </Card>
 
         <Card>
           <CardStory source={require("../assets/story4.jpg")} />
           <CardUser>
-            <Avatar source={require("../assets/user4.jpg")} story={true}/>
+            <Avatar source={require("../assets/user4.jpg")}
+             story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text> Christian Lima</Text>
+          </CardFooter>
         </Card>
 
         <Card>
           <CardStory source={require("../assets/story1.jpg")} />
           <CardUser>
-            <Avatar source={require("../assets/user1.jpg")} story={true}/>
+            <Avatar source={require("../assets/user1.jpg")}
+             story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text> Vanessa Sousa</Text>
+          </CardFooter>
         </Card>
 
         
       </ScrollView>
     </Container>
+    <BottonDivider/>
+    </>
   );
 };
 
